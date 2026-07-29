@@ -174,7 +174,7 @@ export const Login: React.FC<LoginProps> = ({ employees, onLogin }) => {
           </form>
 
           {/* Preset Admin HR Quick Credentials Box */}
-          <div className="bg-slate-900/60 border border-slate-700/60 rounded-2xl p-4 text-xs text-slate-300 space-y-2">
+          {/* <div className="bg-slate-900/60 border border-slate-700/60 rounded-2xl p-4 text-xs text-slate-300 space-y-2">
             <div className="flex items-center justify-between">
               <span className="font-bold text-indigo-400 flex items-center gap-1.5">
                 <UserCheck className="w-4 h-4" /> Akun Admin HR Utama:
@@ -197,7 +197,7 @@ export const Login: React.FC<LoginProps> = ({ employees, onLogin }) => {
                 <span className="font-mono font-bold text-white">admin</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <p className="text-center text-[11px] text-slate-500 mt-6">
