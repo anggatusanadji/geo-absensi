@@ -1,0 +1,57 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "Employee and Admin user accounts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "nip": { "type": "string" },
+        "department": { "type": "string" },
+        "position": { "type": "string" },
+        "officeLocationId": { "type": "string" },
+        "allowOutsideCheckIn": { "type": "boolean" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "attendances": {
+      "title": "Attendance Records",
+      "description": "Daily employee attendance check-ins and check-outs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "date": { "type": "string" },
+        "checkInTime": { "type": "string" },
+        "checkOutTime": { "type": "string" },
+        "workType": { "type": "string" },
+        "status": { "type": "string" },
+        "officeLocationId": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "photoUrl": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "required": ["id", "userId", "date", "checkInTime"]
+    },
+    "officeLocations": {
+      "title": "Office Locations",
+      "description": "Office locations with geofence center and radius",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "radiusMeters": { "type": "number" }
+      },
+      "required": ["id", "name", "latitude", "longitude", "radiusMeters"]
+    }
+  }
+}

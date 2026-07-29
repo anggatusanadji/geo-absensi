@@ -1,0 +1,6 @@
+{
+  "name": "GeoAbsen - Sistem Absensi & Cuti Karyawan",
+  "description": "Sistem absensi berbasis verifikasi lokasi GPS, pengajuan cuti realtime, approval atasan, kelola libur agama/karyawan, dan rekapitulasi laporan admin.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
